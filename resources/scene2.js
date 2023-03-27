@@ -7,11 +7,6 @@ class scene2 extends Phaser.Scene {
   }
 
   create() {
-    // Add text at the top
-    // this.add.text(20, 20, "Playing Game", {
-    //   font: "25px Arial",
-    //   fill: "yellow",
-    // });
     this.world = this.physics.world;
     if (!this.gameStarted) {
       // Create score Label
@@ -54,7 +49,7 @@ class scene2 extends Phaser.Scene {
     // Add blue bricks
     this.blueBricks = this.physics.add.group({
       key: 'brick1',
-      repeat: 1,
+      repeat: 9,
       immovable: true,
       setXY: {
         x: 80,
@@ -66,7 +61,7 @@ class scene2 extends Phaser.Scene {
     // Add yellow bricks
     this.yellowBricks = this.physics.add.group({
       key: 'brick2',
-      repeat: 1,
+      repeat: 9,
       immovable: true,
       setXY: {
         x: 80,
@@ -78,7 +73,7 @@ class scene2 extends Phaser.Scene {
     // Add red bricks
     this.redBricks = this.physics.add.group({
       key: 'brick3',
-      repeat: 1,
+      repeat: 9,
       immovable: true,
       setXY: {
         x: 80,
